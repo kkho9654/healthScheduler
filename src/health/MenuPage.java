@@ -8,10 +8,10 @@ public class MenuPage {
 		User user = sp.getUser();
 		while(true) {
 			System.out.println("-----------");
-			System.out.println("1. °³ÀÎÁ¤º¸°ü¸® ");
-			System.out.println("2. ·çÆ¾ÀÔ·Â ");
-			System.out.println("3. ½Ä´ÜÃßÃµ ");
-			System.out.println("4. ½ºÄÉÁÙ °ü¸® ¹× ¼ºÃëµµ Æò°¡ ");
+			System.out.println("1. ê°œì¸ì •ë³´ê´€ë¦¬ ");
+			System.out.println("2. ë£¨í‹´ì…ë ¥ ");
+			System.out.println("3. ì‹ë‹¨ì¶”ì²œ ");
+			System.out.println("4. ìŠ¤ì¼€ì¤„ ê´€ë¦¬ ë° ì„±ì·¨ë„ í‰ê°€ ");
 			System.out.println("-----------");
 			System.out.print(">>> ");
 			int num = sc.nextInt();
@@ -19,17 +19,14 @@ public class MenuPage {
 				PrivacyPage pp = new PrivacyPage(user);
 				}
 			else if(num == 2) {
-				// ·çÆ¾ÀÔ·Â ÇÔ¼ö
 				break;
 				}
 			else if(num == 3){
-				// ½Ä´ÜÃßÃµ ÇÔ¼ö
 			}
 			else if(num==4) {
-				//½ºÄÉÁÙ °ü¸® ¹× ¼ºÃëµµ Æò°¡ ÇÔ¼ö
 			}
 			else {
-				System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¹øÈ£¸¦ ÀÔ·ÂÇß½À´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ë²ˆí˜¸ë¥¼ ì…ë ¥í–ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ì£¼ì„¸ìš”..");
 			}
 			}
 	}

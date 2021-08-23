@@ -6,11 +6,11 @@ public class SignupPage {
 	Scanner sc = new Scanner(System.in);
 	User user;
 	public SignupPage() {
-		System.out.println("È¸¿ø°¡ÀÔ ÆäÀÌÁö");
+		System.out.println("íšŒì›ê°€ì… í˜ì´ì§€");
 		System.out.println("-----------");
-		System.out.print("¿øÇÏ´Â ¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì›í•˜ëŠ” ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		String id = sc.next();
-		System.out.print("¿øÇÏ´Â ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì›í•˜ëŠ” ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		String pw = sc.next();
 		user= new User(id, pw);
 	}

@@ -5,25 +5,25 @@ import java.util.Scanner;
 
 public class StartPage {
 	Scanner sc = new Scanner(System.in);	
-	ArrayList<User> users = new ArrayList<User>();    	//ÀüÃ¼ userµéÀÇ Á¤º¸¸¦ ³ÖÀº Arraylist
-	User user = new User();								//·Î±×ÀÎÇÏ°íÀÚ ÇÏ´Â userÀÇ Á¤º¸
+	ArrayList<User> users = new ArrayList<User>();    	
+	User user = new User();								
 	public StartPage() 
 	{
 		while(true) {
 		//showUser();
 		System.out.println("-----------");
-		System.out.println("1. ·Î±×ÀÎ ");
-		System.out.println("2. È¸¿ø°¡ÀÔ ");
+		System.out.println("1. ë¡œê·¸ì¸ ");
+		System.out.println("2. íšŒì›ê°€ì… ");
 		System.out.println("-----------");
 		System.out.print(">>> ");
 		int num = sc.nextInt();
 		if(num == 1) {
-			LoginPage lp = new LoginPage(users);		//ÀüÃ¼ À¯ÀúÀÇ Á¤º¸¸¦ ¸Å°³º¯¼ö·Î ¹ŞÀ½
-			if (lp.getIs_login()==true) {				//¸¸¾à ·Î±×ÀÎÀÌ ¼º°øÇÑ´Ù¸é
-				user = lp.getUser();					//·Î±×ÀÎÇÏ°íÀÚ ÇÏ´Â userÀÇ Á¤º¸¸¦ ¹Ş¾Æ¼­ ÀúÀåÇÑÈÄ Á¤Áö
+			LoginPage lp = new LoginPage(users);		
+			if (lp.getIs_login()==true) {				
+				user = lp.getUser();					
 				break;
 			}
-			else {										//·Î±×ÀÎ¿¡ ½ÇÆĞÇÏ¸é ´Ù½Ã ¹İº¹
+			else {										
 				continue;
 			}
 			}
@@ -32,7 +32,7 @@ public class StartPage {
 			users.add(sp.getUser());
 			}
 		else {
-			System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¹øÈ£¸¦ ÀÔ·ÂÇß½À´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØÁÖ¼¼¿ä");
+			System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ë²ˆí˜¸ë¥¼ ì…ë ¥í–ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ì£¼ì„¸ìš”");
 		}
 		}
 	}

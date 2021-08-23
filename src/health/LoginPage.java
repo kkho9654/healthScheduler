@@ -11,30 +11,30 @@ public class LoginPage {
 	boolean is_login = false;
 	public LoginPage(ArrayList<User> users) {
 		// TODO Auto-generated constructor stub
-		System.out.println("·Î±×ÀÎÆäÀÌÁö");
+		System.out.println("ë¡œê·¸ì¸í˜ì´ì§€");
 		System.out.println("-----------");
 		System.out.print("id --> ");
 		id = sc.next();
 		System.out.print("pw --> ");
 		pw = sc.next(); 
 		if (users.isEmpty()) {
-			System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¾ÆÀÌµğÀÔ´Ï´Ù. ´Ù½Ã½ÃµµÇØÁÖ¼¼¿ä");
+			System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì•„ì´ë””ì…ë‹ˆë‹¤. ë‹¤ì‹œì‹œë„í•´ì£¼ì„¸ìš”");
 		}
 		
 		for(int i=0; i<users.size(); i++) {
 			if(users.get(i).getId().equals(id)) {
 				if(users.get(i).getPw().equals(pw)) {
-					System.out.println("·Î±×ÀÎ¿¡ ¼º°øÇÏ¿´½À´Ï´Ù. È¯¿µÇÕ´Ï´Ù");
+					System.out.println("ë¡œê·¸ì¸ì— ì„±ê³µí•˜ì˜€ìŠµë‹ˆë‹¤. í™˜ì˜í•©ë‹ˆë‹¤");
 					is_login=true;
 					user = users.get(i);
 					break;
 					}	
 				else {
-					System.out.println("ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù. ´Ù½Ã½ÃµµÇØÁÖ¼¼¿ä");
+					System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤. ë‹¤ì‹œì‹œë„í•´ì£¼ì„¸ìš”");
 				}
 			}
 			else {
-				System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¾ÆÀÌµğÀÔ´Ï´Ù. ´Ù½Ã½ÃµµÇØÁÖ¼¼¿ä");
+				System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì•„ì´ë””ì…ë‹ˆë‹¤. ë‹¤ì‹œì‹œë„í•´ì£¼ì„¸ìš”");
 			}
 		}
 

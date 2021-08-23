@@ -6,8 +6,8 @@ public class PrivacyPage {
 	public PrivacyPage(User user) {
 		while(true) {
 			show_imf(user);
-			System.out.println("Á¤º¸¸¦ ¼öÁ¤ÇÏ·Á¸é 1¹ø, ¸ŞÀÎ È­¸éÀ¸·Î µ¹¾Æ°¡·Á¸é 2¹øÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä");
-			System.out.println("1.¼öÁ¤ 2.¸ŞÀÎÈ­¸é");
+			System.out.println("ì •ë³´ë¥¼ ìˆ˜ì •í•˜ë ¤ë©´ 1ë²ˆ, ë©”ì¸ í™”ë©´ìœ¼ë¡œ ëŒì•„ê°€ë ¤ë©´ 2ë²ˆì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
+			System.out.println("1.ìˆ˜ì • 2.ë©”ì¸í™”ë©´");
 			int num = sc.nextInt();
 			if (num==1) {
 				regist_imf(user);
@@ -16,37 +16,37 @@ public class PrivacyPage {
 				break;
 			}
 			else {
-				System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¼ıÀÚ¸¦ ÀÔ·ÂÇß½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ìˆ«ìë¥¼ ì…ë ¥í–ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			}
 		}
 	}
 	
 	void show_imf(User user) {
-		System.out.println("°³ÀÎÁ¤º¸ ÆäÀÌÁö");
+		System.out.println("ê°œì¸ì •ë³´ í˜ì´ì§€");
 		System.out.println("-----------");
-		System.out.println("ÀÌ¸§ : " + user.getName());	
-		System.out.println("Å° : " + user.getHeight()+ "cm");	
-		System.out.println("¸ö¹«°Ô : " + user.getWeight()+ "kg");	
+		System.out.println("ì´ë¦„ : " + user.getName());	
+		System.out.println("í‚¤ : " + user.getHeight()+ "cm");	
+		System.out.println("ëª¸ë¬´ê²Œ : " + user.getWeight()+ "kg");	
 		System.out.println("BMI : " + user.getBMI());	
-		System.out.println("Ã¼Áö¹æ·® : " + user.getFat() + "%");	
-		System.out.println("±ÙÀ°·® : " + user.getMuscle()+"%");	
+		System.out.println("ì²´ì§€ë°©ëŸ‰ : " + user.getFat() + "%");	
+		System.out.println("ê·¼ìœ¡ëŸ‰ : " + user.getMuscle()+"%");	
 		System.out.println("-----------");
 	}
 	
 	void regist_imf(User user) {
-		System.out.println("¸ğµç ÀÔ·ÂÀº ´ÜÀ§¾øÀÌ ÀÛ¼ºÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.");
+		System.out.println("ëª¨ë“  ì…ë ¥ì€ ë‹¨ìœ„ì—†ì´ ì‘ì„±í•´ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤.");
 		System.out.println("-----------");
-		System.out.print("ÀÌ¸§ : ");	
+		System.out.print("ì´ë¦„ : ");	
 		user.setName(sc.next());
-		System.out.print("Å° : ");	
+		System.out.print("í‚¤ : ");	
 		user.setHeight(sc.nextInt());
-		System.out.print("¸ö¹«°Ô : ");	
+		System.out.print("ëª¸ë¬´ê²Œ : ");	
 		user.setWeight(sc.nextInt());
 		System.out.print("BMI: ");	
 		user.setBMI(sc.nextInt());
-		System.out.print("Ã¼Áö¹æ·® : ");	
+		System.out.print("ì²´ì§€ë°©ëŸ‰ : ");	
 		user.setFat(sc.nextInt());
-		System.out.print("±ÙÀ°·® : ");	
+		System.out.print("ê·¼ìœ¡ëŸ‰ : ");	
 		user.setMuscle(sc.nextInt());
 		System.out.println("-----------");
 	}
