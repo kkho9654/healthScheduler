@@ -13,7 +13,8 @@ public class Main {
         	AddRoutinePage a=new AddRoutinePage();
     		a.addRoutinePage("usertest");
         } else if (menu == 2) {
-
+        	UserInfoPage a=new UserInfoPage();
+    		a.userInfo("usertest");
         } else if (menu == 3) {
             Food fd = new Food(person.getMuscle(), person.getBody_fat());
             fd.current();
