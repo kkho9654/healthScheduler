@@ -2,7 +2,6 @@ package healthScheduler;
 import java.util.Scanner;
 
 public class Main {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Profile person = new Profile();
@@ -13,7 +12,7 @@ public class Main {
         	AddRoutinePage a=new AddRoutinePage();
     		a.addRoutinePage("usertest");
         } else if (menu == 2) {
-
+        	
         } else if (menu == 3) {
             Food fd = new Food(person.getMuscle(), person.getBody_fat());
             fd.current();
