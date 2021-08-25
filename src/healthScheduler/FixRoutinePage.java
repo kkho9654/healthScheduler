@@ -17,7 +17,7 @@ public class FixRoutinePage {
 			BufferedReader br = new BufferedReader(fr);
 			
 			
-			System.out.print("수정할 요일을 선택하세요>>");
+			System.out.print("수정할 요일을 선택하세요 ex)월>>");
 			String day=scan.next();
 			System.out.print("수정할 내용을 입력하세요 ex)운동이름 00kg 0set >>");
 			scan.nextLine();
