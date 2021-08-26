@@ -38,5 +38,7 @@ public class StartPage {
 		}
 		}
 	}
-
+	String get_name() {
+		return username;
+	}
 }
