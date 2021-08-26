@@ -14,6 +14,7 @@ public class LoginPage {
 	String name;
 	boolean is_login = false;
 	public LoginPage() {
+		//commit check
 		System.out.println("로그인페이지");
 		System.out.println("-----------");
 		System.out.print("id --> ");
