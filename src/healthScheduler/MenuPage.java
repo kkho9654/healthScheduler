@@ -28,8 +28,8 @@ public class MenuPage {
 	            Food fd = new Food();
 	            fd.foodRoutine("usertest") ;
 	        } 
-			else if (menu == 4) {
-				//함수추가
+			else if (menu == 4) {//함수추가
+				
 	        }
 			else {
 				System.out.println("올바르지 않은 번호를 입력했습니다. 다시입력해주세요..");
