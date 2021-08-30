@@ -12,7 +12,7 @@ public class Food {
     double weight; //몸무게
     double body_fat; //체지방
     double muscle; //근육량
-     
+    
     double lose_fat;
     double add_mus;
     int meal_time; //식사 횟수

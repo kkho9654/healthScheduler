@@ -47,15 +47,15 @@ public class SignupPage {
 					File dir=new File(".\\resource",id);
 					dir.mkdir();
 					
-					File scheduleF=new File(".\\resource\\"+id,"schedule.txt");
-					scheduleF.createNewFile();
-					
-					File infoF=new File(".\\resource\\"+id,"user-info.txt");
-					infoF.createNewFile();
-					FileWriter fw1 = new FileWriter(".\\resource\\"+id+"\\user-info.txt");
+					FileWriter fw1 = new FileWriter(".\\resource\\"+id+"\\schedule.txt");
 					BufferedWriter bw1 = new BufferedWriter(fw1);
-					bw1.write("이름:"+"\r\n" + "키:"+"\r\n" + "몸무게:"+"\r\n" + "체지방량:"+"\r\n" + "골격근량:"+"\r\n" );
+					bw1.write(" /0%\n" + " /0%\n"+" /0%\n"+" /0%\n"+" /0%\n"+" /0%\n"+" /0%\n");
 					bw1.close();
+					
+					FileWriter fw2 = new FileWriter(".\\resource\\"+id+"\\user-info.txt");
+					BufferedWriter bw2 = new BufferedWriter(fw2);
+					bw2.write("이름:"+"\r\n" + "키:"+"\r\n" + "몸무게:"+"\r\n" + "체지방량:"+"\r\n" + "골격근량:"+"\r\n" );
+					bw2.close();
 					
 					break;
 				}

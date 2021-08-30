@@ -12,6 +12,7 @@ public class MenuPage {
 			System.out.println("2. 루틴입력 ");
 			System.out.println("3. 식단추천 ");
 			System.out.println("4. 스케줄 관리 및 성취도 평가 ");
+			System.out.println("5. 종료");
 			System.out.println("-----------");
 			System.out.print(">>> ");
 			int menu = sc.nextInt();
@@ -28,9 +29,14 @@ public class MenuPage {
 	            Food fd = new Food();
 	            fd.foodRoutine("usertest") ;
 	        } 
-			else if (menu == 4) {//함수추가
-				
+			else if (menu == 4) {
+				EvaluatePage ep = new EvaluatePage();	
+				ep.evaluate("usertest");
 	        }
+			else if(menu == 5) {
+				System.out.println("프로그램을 종료합니다.");
+				break;
+			}
 			else {
 				System.out.println("올바르지 않은 번호를 입력했습니다. 다시입력해주세요..");
 			}
