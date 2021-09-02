@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -30,11 +31,11 @@ public class SignupPage {
 					StringTokenizer st = new StringTokenizer(line, ", ");
 					String id_check = st.nextToken();
 					if(id_check.equals(id)) {
-							is_ok = false;
-							System.out.println("동일한 아이디가 존재합니다. 다른 아이디를 사용해주세요");
-							System.out.print("원하는 아이디를 입력하세요: ");
-							id = sc.next();
-							break;
+						is_ok = false;
+						System.out.println("동일한 아이디가 존재합니다. 다른 아이디를 사용해주세요");
+						System.out.print("원하는 아이디를 입력하세요: ");
+						id = sc.next();
+						break;
 					}
 					line=br.readLine();
 				}
@@ -43,6 +44,19 @@ public class SignupPage {
 					BufferedWriter bw = new BufferedWriter(fw);
 					bw.write(id + ", " + pw + ", " + name+"\n");
 					bw.close();
+					File dir=new File(".\\resource",id);
+					dir.mkdir();
+					
+					FileWriter fw1 = new FileWriter(".\\resource\\"+id+"\\schedule.txt");
+					BufferedWriter bw1 = new BufferedWriter(fw1);
+					bw1.write(" /0%\n" + " /0%\n"+" /0%\n"+" /0%\n"+" /0%\n"+" /0%\n"+" /0%\n");
+					bw1.close();
+					
+					FileWriter fw2 = new FileWriter(".\\resource\\"+id+"\\user-info.txt");
+					BufferedWriter bw2 = new BufferedWriter(fw2);
+					bw2.write("이름:"+"\r\n" + "키:"+"\r\n" + "몸무게:"+"\r\n" + "체지방량:"+"\r\n" + "골격근량:"+"\r\n" );
+					bw2.close();
+					
 					break;
 				}
 				br.close();
@@ -53,6 +67,6 @@ public class SignupPage {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
 

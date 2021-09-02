@@ -16,7 +16,6 @@ public class FixUserInfoPage {
 			FileReader fr=new FileReader(".\\resource\\"+userName+"\\user-info.txt");
 			BufferedReader br = new BufferedReader(fr);
 
-
 			System.out.print("수정할 정보를 선택하세요 ex)이름>>");
 			String info=scan.next();
 			System.out.print("수정할 내용을 입력하세요 >>");
