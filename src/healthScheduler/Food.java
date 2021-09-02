@@ -61,6 +61,7 @@ public class Food {
 
     public void target() {
         System.out.println("원하시는 목표치를 설정해주세요");
+        // 체지방량, 골격근량 예시 보여주기
         System.out.print("1.체지방량 감소 :");
         double bf = sc.nextDouble();
         lose_fat = bf;
